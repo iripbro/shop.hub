@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Черный цвет фона */
+    color: white; /* Белый цвет текста */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: transparent; /* Убираем серый фон */
+    box-shadow: none; /* Убираем тень */
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow-x: auto; /* Добавляем горизонтальную прокрутку, если необходимо */
+}
+
+h1 {
+    color: #ff4757; /* Цвет заголовка */
+}
+
+.product {
+    display: inline-block; /* Отображение в ряд */
+    width: 150px; /* Устанавливаем фиксированную ширину для каждого товара */
+    margin: 10px; /* Отступы между товарами */
+    padding: 10px; /* Уменьшаем внутренние отступы */
+    text-align: center; /* Центрируем текст */
+    background: #444; /* Темный фон для продуктов */
+    border: none; /* Убираем рамку */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.product img {
+    width: 100px; /* Устанавливаем фиксированный размер изображения */
+    height: 100px; /* Фиксированная высота */
+    border-radius: 10px;
+}
+
+.product h2 {
+    color: #ff4757; /* Красный цвет для названия продукта */
+}
+
+.product p {
+    color: #ccc; /* Цвет описания продукта */
+}
+
+.buy-button {
+    background-color: #ff4757; /* Красный фон для кнопки */
+    color: white; /* Белый цвет текста */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: #ff6b81; /* Более светлый красный при наведении на кнопку */
+}
+
+.cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: #ff4757; /* Красный фон для иконки корзины */
+    border-radius: 50%;
+    padding: 10px;
+    color: white; /* Белый цвет для иконки */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: black; /* Черный фон для счётчика */
+    color: white;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 12px;
+}
+
+.cart {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background: #444; /* Темный фон для корзины */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    display: none; /* Скрыть корзину по умолчанию */
+    transition: all 0.3s ease;
+}
+
+.cart.visible {
+    display: block; /* Показывать корзину, когда класс включен */
+}
+
+.cart h2 {
+    margin: 0 0 10px 0;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.remove-button {
+    background-color: #ff4757; /* Красный фон для кнопок удаления */
+    color: white; /* Белый цвет текста */
+    border: none;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    background-color: #ff6b81; /* Более светлый красный при наведении */
+}
